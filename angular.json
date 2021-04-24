@@ -16,6 +16,16 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "lodash",
+              "firebase",
+              "firebase/app",
+              "@firebase/app",
+              "@firebase/database",
+              "@firebase/firestore",
+              "@angular/fire",
+              "zone.js"
+            ],
             "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
